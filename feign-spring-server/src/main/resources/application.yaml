@@ -1,0 +1,6 @@
+feign:
+  hystrix.enabled: true
+  client:
+    default:
+#      feignName: default
+      loggerLevel: FULL

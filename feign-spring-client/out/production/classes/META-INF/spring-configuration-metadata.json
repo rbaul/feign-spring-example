@@ -1,0 +1,19 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.example.feign.client.config.RestClientProperties",
+      "name": "example.client.api",
+      "type": "com.example.feign.client.config.RestClientProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.example.feign.client.config.RestClientProperties",
+      "defaultValue": "http:\/\/localhost:8080",
+      "name": "example.client.api.path",
+      "description": "API location of application service.",
+      "type": "java.lang.String"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+rootProject.name = 'feign-spring-example'
+include 'feign-spring-client'
+include 'feign-spring-server'
+

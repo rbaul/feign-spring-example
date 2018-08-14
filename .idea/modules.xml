@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/feign-spring-client/feign-spring-client.iml" filepath="$PROJECT_DIR$/.idea/modules/feign-spring-client/feign-spring-client.iml" group="feign-spring-client" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/feign-spring-client/feign-spring-client_main.iml" filepath="$PROJECT_DIR$/.idea/modules/feign-spring-client/feign-spring-client_main.iml" group="feign-spring-client" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/feign-spring-client/feign-spring-client_test.iml" filepath="$PROJECT_DIR$/.idea/modules/feign-spring-client/feign-spring-client_test.iml" group="feign-spring-client" />
+      <module fileurl="file://$PROJECT_DIR$/feign-spring-example.iml" filepath="$PROJECT_DIR$/feign-spring-example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/feign-spring-server.iml" filepath="$PROJECT_DIR$/.idea/modules/feign-spring-server.iml" group="feign-spring-server" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/feign-spring-server/feign-spring-server_main.iml" filepath="$PROJECT_DIR$/.idea/modules/feign-spring-server/feign-spring-server_main.iml" group="feign-spring-server" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/feign-spring-server/feign-spring-server_test.iml" filepath="$PROJECT_DIR$/.idea/modules/feign-spring-server/feign-spring-server_test.iml" group="feign-spring-server" />
+    </modules>
+  </component>
+</project>
