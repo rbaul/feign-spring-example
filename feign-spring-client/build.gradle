@@ -26,9 +26,9 @@ dependencies {
     compileOnly('io.springfox:springfox-swagger2:2.9.2')
     compileOnly('org.projectlombok:lombok')
     compileOnly('org.springframework.boot:spring-boot-configuration-processor')
-    compileOnly('org.springframework.cloud:spring-cloud-starter-openfeign')
 
-    compile('org.springframework.cloud:spring-cloud-starter-netflix-hystrix')
+    compileOnly('org.springframework.cloud:spring-cloud-starter-openfeign')
+    compileOnly('org.springframework.cloud:spring-cloud-starter-netflix-hystrix')
 
 
     annotationProcessor('org.projectlombok:lombok')
