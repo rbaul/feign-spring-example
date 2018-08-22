@@ -27,8 +27,9 @@ dependencies {
     compileOnly('org.projectlombok:lombok')
     compileOnly('org.springframework.boot:spring-boot-configuration-processor')
 
+    compileOnly('org.springframework.boot:spring-boot-starter-web')
     compileOnly('org.springframework.cloud:spring-cloud-starter-openfeign')
-    compileOnly('org.springframework.cloud:spring-cloud-starter-netflix-hystrix')
+//    compileOnly('org.springframework.cloud:spring-cloud-starter-netflix-hystrix')
 
 
     annotationProcessor('org.projectlombok:lombok')

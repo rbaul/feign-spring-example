@@ -1,6 +1,7 @@
 package com.example.feign.client.feignClient.config;
 
 import com.example.feign.client.feignClient.config.pageSupport.PageableQueryEncoder;
+import feign.Feign;
 import feign.codec.ErrorDecoder;
 import org.springframework.beans.factory.ObjectFactory;
 import org.springframework.boot.autoconfigure.http.HttpMessageConverters;
@@ -11,10 +12,10 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class ClientConfig2 {
 
-    @Bean
-    public ErrorDecoder errorDecoder(){
-        return new ClientErrorDecoder2();
-    }
+//    @Bean
+//    public ErrorDecoder errorDecoder(){
+//        return new ClientErrorDecoder2();
+//    }
 
     @Bean
     public PageableQueryEncoder errorDecoder(ObjectFactory<HttpMessageConverters> messageConverters){
@@ -23,9 +24,11 @@ public class ClientConfig2 {
 
 //    @Bean
 //    public Feign feignBuilder(){
-//        return Feign.builder()
-//                .logLevel(Logger.Level.FULL)
-//                .build();
+//        return Feign.builder().build();
 //    }
 
+//    @Bean
+//    public Logger.Level feignLoggerLevel(){
+//        return Logger.Level.FULL;
+//    }
 }

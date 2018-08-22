@@ -16,7 +16,6 @@ import java.io.IOException;
 import static feign.FeignException.errorStatus;
 
 @Slf4j
-//@Component
 public class ClientErrorDecoder implements ErrorDecoder {
 
     @Autowired

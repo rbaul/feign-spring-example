@@ -56,9 +56,9 @@ public interface FeignExampleClientApiWithFallback {
             return new ErrorDecoder.Default();
         }
 
-        @Bean
-        public Encoder encoder(){
-            return new Encoder.Default();
-        }
+//        @Bean
+//        public Encoder encoder(){
+//            return new Encoder.Default();
+//        }
     }
 }

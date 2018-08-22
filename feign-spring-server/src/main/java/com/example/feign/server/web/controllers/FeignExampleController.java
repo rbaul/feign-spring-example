@@ -17,7 +17,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.Arrays;
+import java.util.Enumeration;
 
 @Slf4j
 @RestController
@@ -30,8 +32,13 @@ public class FeignExampleController {
 
     private final FeignExampleClientApiWithFallbackFactory feignExampleClientApiWithFallbackFactory;
 
+    @Autowired
+    private HttpServletRequest request;
+
     @PostMapping("info")
     public String getInfo(@Validated @RequestBody ExampleDto exampleDto){
+        Enumeration<String> headerNames = request.getHeaderNames();
+        log.info(">>> headerNames: {}", headerNames);
         return exampleDto.getName();
     }
 
@@ -49,6 +56,8 @@ public class FeignExampleController {
 
     @GetMapping("proxy")
     public String getInfoFromProxy(){
+        Enumeration<String> headerNames = request.getHeaderNames();
+        log.info(">>> headerNames: {}", headerNames);
         return feignExampleClientApi.getInfo(ExampleDto.builder().build());
     }
 

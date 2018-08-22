@@ -16,10 +16,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 //		primary = false,
 //		decode404 = true,
 //        url = "${example.client.api.path}"
-        url = "http://localhost:8080",
+        url = "http://localhost:8080"//,
 //        fallback = FeignExampleClientApiFallback.class,
 //        fallbackFactory = FeignExampleClientApiFallbackFactory.class
-        configuration = ClientConfig2.class
+//        configuration = ClientConfig2.class
 )
 public interface FeignExampleClientApi {
     @PostMapping("info")
